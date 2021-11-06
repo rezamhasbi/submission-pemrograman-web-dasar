@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background-image: url(foto/wall.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.jumbotron {
+  background-image: url(foto/backgroundJumbotron.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-size: 30px;
+  padding: 60px;
+  text-align: center;
+  color: white;
+  height: 400px;
+}
+
+img {
+  width: 200px;
+  padding-bottom: 20px;
+}
+#data th,
+td {
+  color: white;
+  font-size: 25px;
+  font-family: "Courier New", Courier, monospace;
+  padding-bottom: 15px;
+  padding-right: 5px;
+}
+
+#content {
+  float: left;
+  width: 75%;
+}
+main {
+  padding: 20px;
+  overflow: auto;
+}
+aside {
+  float: right;
+  width: 25%;
+  padding-left: 20px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-top: 20px;
+  background-color: #1f3459;
+}
+#footer {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  background-color: lightblue;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+#foto {
+  flex-basis: 30%;
+}
+#data {
+  flex-basis: 70%;
+}
+#about p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  padding-left: 10px;
+  color: whitesmoke;
+  text-align: center;
+}
+#background p,
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+#skills th,
+td {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  padding-left: 10px;
+  color: whitesmoke;
+}
+#contact p,
+th,
+td {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  padding-left: 10px;
+  color: whitesmoke;
+}
+h3 {
+  background-color: #bdbec6;
+  color: whitesmoke;
+  padding: 15px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #a66b4f;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.active {
+  background-color: #1f3459;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+.topnav a:hover {
+  background-color: #555;
+  color: white;
+}
+
+table {
+  padding: 10px;
+  text-align: left;
+}
+a:hover {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+  nav a {
+    font-size: 15px;
+  }
+  .jumbotron {
+    font-size: 15px;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+  }
+  #foto {
+    flex-basis: 30%;
+  }
+  #data {
+    flex-basis: 70%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive {
+    float: none;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
